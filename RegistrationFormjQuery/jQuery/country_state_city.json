@@ -1,0 +1,72 @@
+[
+ {
+  "id":"India",
+  "name":"India",
+  "parent_id":"0"
+ }, 
+ {
+  "id":"Nepal",
+  "name":"Nepal",
+  "parent_id":"0"
+ }, 
+ {
+  "id":"Odisha",
+  "name":"Odisha",
+  "parent_id":"India"
+ }, 
+ {
+  "id":"West Bengal",
+  "name":"West Bengal",
+  "parent_id":"India"
+ }, 
+ {
+  "id":"Bagmati",
+  "name":"Bagmati",
+  "parent_id":"Nepal"
+ }, 
+ {
+  "id":"Sagarmatha",
+  "name":"Sagarmatha",
+  "parent_id":"Nepal"
+ }, 
+ {
+  "id":"Bhubaneswar",
+  "name":"Bhubaneswar",
+  "parent_id":"Odisha"
+ }, 
+ {
+  "id":"Cuttack",
+  "name":"Cuttack",
+  "parent_id":"Odisha"
+ }, 
+ {
+  "id":"Kolkata",
+  "name":"Kolkata",
+  "parent_id":"West Bengal"
+ }, 
+ {
+  "id":"Khadagpur",
+  "name":"Khadagpur",
+  "parent_id":"West Bengal"
+ }, 
+ {
+  "id":"Kathmandu",
+  "name":"Kathmandu",
+  "parent_id":"Bagmati"
+ }, 
+ {
+  "id":"Lalitpur",
+  "name":"Lalitpur",
+  "parent_id":"Bagmati"
+ }, 
+ {
+  "id":"Solukhumbu",
+  "name":"Solukhumbu",
+  "parent_id":"Sagarmatha"
+ }, 
+ {
+  "id":"Khojpur",
+  "name":"Khojpur",
+  "parent_id":"Sagarmatha"
+ }
+]

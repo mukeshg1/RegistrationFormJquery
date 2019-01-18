@@ -1,0 +1,97 @@
+<!--
+* File Name  : RegistrationForm
+* File Path: C:\Users\mukeshg\Desktop\Internship\RegFormJquery
+* Description : Creation of form and displaying entered data in form in table
+* Created date : 14/01/2019
+* Author  : @Mukesh
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Registration</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="RegFormStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bodyclass">
+<center>
+	<div class="registerform"><!--div register form start-->
+		<h2 class="heading">Register Yourself</h2><br>
+		<p><i>Fill out the form to register</i></p>
+		<!--Form to register with different attributes-->
+		<form id="register_form">
+			<b>Name:<sup>*</sup></b><br>
+			<input type="text" class="inputstyle2" id="first_name" autocomplete="off" placeholder="Firstname			Middlename			Lastname" required>
+			<span class="errorMessage" id="name_Error"></span><br>
+			<b>Sex:</b><br>
+			<select class="select" autocomplete="off" id="sex">
+				<option value="">Sex</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="others">Others</option><br>
+			</select><br>
+			<b>Country:<sup>*</sup></b><br>
+			<select class="select" id="country">
+				<option value="">Select country</option>
+			</select>
+			<select class="select" id="state">
+				<option value="">Select state</option>
+			</select>
+			<select class="select" id="city">
+				<option value="">Select city</option>
+			</select><br>
+			<span class="errorMessage" id="country_Error"></span><br>  
+			<b>Phone Number:<sup>*</sup></b>
+			<!--<select class="select" id="country_code">
+				<option value="">Country Code</option>
+				<option value="+91" required>India(+91)</option>
+				<option value="+86" required>China(+86)</option>
+				<option value="+977" required>Nepal(+977)</option>
+				<option value="+1" required>USA(+1)</option>
+				<option value="+44" required>UK(+44)</option>
+			</select>-->
+			<input type="text" class="inputstyle1" id="phone_number" placeholder="Mobile Number" maxlength="10" pattern= "[0-9]"  title= "Enter numbers only" autocomplete="off" required><br>
+			<span class="errorMessage" id="code_Error"></span></span><span class="errorMessage" id="phone_Error"></span><br>
+			<b>Date of Birth:<sup>*</sup></b>
+			<input type="date" class="inputstyle1" id="birth_date" autocomplete="off"><br>
+			<span class="errorMessage" id="birth_date_Error"></span><br>
+			<b>E-Mail:<sup>*</sup></b><br>
+			<input type="email" class="inputstyle2" id="user_email" autocomplete="off" placeholder="Enter your E-Mail address" required>
+			<span class="errorMessage" id="email_Error"></span><br>
+			<b>Address:<sup>*</sup></b><br>
+			<input type="text" class="inputstyle2" id="user_addr" autocomplete="off" placeholder="Enter your address">
+			<span class="errorMessage" id="user_addr_Error"></span><br>
+			<b>Describe Yourself:<sup>*</sup></b><br>
+			<textarea id="about_user" class="textarea" rows="5" cols="20" autocomplete="off" placeholder="Write about yourself here..."></textarea><br>
+			<span class="errorMessage" id="about_user_Error"></span><br>
+			<input type="button" id="submit_btn" value="Submit">
+			<input type="button" value="Update" id="b_Update">
+			<input type="reset" id="reset_btn" value="Reset">
+		</form>
+</center>	
+</div><!--division regform end-->
+<!--Table to display enetered value in form-->
+<table id="table_user" >
+		<tr>
+		  <th>Name</th>
+		  <th>Sex</th>
+		  <!--<th>Country Code</th>-->
+		  <th>Country</th>
+		  <th>State</th>
+		  <th>City</th>
+		  <th>Phone Number</th>
+		  <th>Date of Birth</th>
+		  <th>E-Mail</th>
+		  <th>Address</th>
+		  <th>About</th>
+		  <th>Options</th>
+		</tr>
+		<!--Fetching data from the script to display in table using id-->
+		<tbody id='user_data'>  
+		</tbody>
+	  </table>
+<script type="text/javascript" src=src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>
+<script type="text/javascript" src="validate4.js"></script>
+</body>
+</html>

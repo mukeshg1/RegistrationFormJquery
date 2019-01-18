@@ -1,0 +1,178 @@
+/*
+Description: Styling for HTML form named register in RegistrationForm HTML file
+File Path: C:\Users\mukeshg\Desktop\Internship\RegFormJquery
+created date: 10/01/2019
+@Author: Mukesh 
+*/
+
+*{
+	margin: 0;
+}
+
+.bodyclass
+{
+	background-color: #111529;
+}
+
+.heading
+{
+	margin: 0;
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 480px;
+	height: 60px;
+	padding-top: 10%;
+	border-radius: 10px;
+}
+
+.register_form
+{
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 15px;
+}
+
+.registerform
+{
+	color: black;
+	text-align: left;
+	border-radius: 10px;
+	border: 2px solid;
+	margin-top: 25px;
+	margin-left: 10px;
+	padding: 10px;
+	width:480px;
+	background-color: white;
+}
+
+.inputstyle1
+{
+	border: 1px solid;
+	padding:2px;
+	margin: 10px 0;
+	width: 150px;
+	height: 28px;
+	box-sizing: border-box;
+}
+
+.inputstyle2
+{
+	border: 1px solid;
+	padding:2px;
+	margin: 10px 0;
+	width: 100%;
+	height: 28px;
+	box-sizing: border-box;
+}
+
+.inputstyle3{
+	margin: 10px 0;
+}
+
+.select{
+	border: 1px solid;
+	margin: 10px 0;
+	width: 150px;
+	height: 28px;
+	box-sizing: border-box;
+}
+
+.textarea{
+	margin: 10px 0;
+	padding: 8px;
+	border: 1px solid black;
+	width: 80%;
+	height: 150px;
+	box-sizing: border-box;
+}
+
+.errorMessage{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#submit_btn{
+	border: 0 solid;
+	color: white;
+	background-color: blue;
+	padding: 2px;
+	margin: 10px 0;
+	width: 40%;
+	height: 28px;
+	box-sizing: border-box;
+	font-weight: bold;
+	size: 10px;
+}
+#reset_btn{
+	border: 0 solid;
+	color: white;
+	background-color:#555555;
+	padding: 2px;
+	margin: 10px 0;
+	width: 40%;
+	height: 28px;
+	box-sizing: border-box;
+	font-weight: bold;
+	size: 10px;
+}
+#b_Update{
+	border: 0 solid;
+	padding: 2px;
+	color: white;
+	background-color: #4CAF50;
+	margin: 10px 0;
+	width: 40%;
+	height: 28px;
+	font-weight: bold;
+	box-sizing: border-box;
+	size: 10px;
+}
+
+th{
+	background: rgb(209, 213, 218);
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+#table_user{
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 10px;
+}
+
+td{
+	height: auto;
+	color: white;
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+tr:hover
+{
+	background-color:#111213;
+}
+
+#b_Edit{
+	border: 2px solid;
+	margin: 2px;
+	
+	color: black;
+	font-weight: bold;
+
+}
+
+ #b_Del{
+	border: 2px solid  #f44336;
+	margin: 2px;
+	color: white;
+	background-color: #f44336;
+	font-weight: bold;
+
+}
+
