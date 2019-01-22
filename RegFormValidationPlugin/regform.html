@@ -1,0 +1,132 @@
+<!--
+* File Name    : RegistrationForm.html
+* File Path    : C:\Users\mukeshg\Desktop\Internship\RegistrationFormJquery\HTML
+* Description  : Creation of form and displaying entered data in form in table using Bootstrap CSS
+* Created date : 21/01/2019
+* Author       : @Mukesh
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h1><center>Register Yourself!</center></h1>
+    <form id="register_form" style="background-color: #fffdfd;margin:10px;padding: 10px">
+        <label><i>Fill out the form to register</i></label>
+        <div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="inputName">First Name<sup>*</sup></label>
+				<input type="text" class="form-control" id="first_name" name="first_name" autocomplete="off" placeholder="First Name">
+			
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputName">Middle Name</label>
+				<input type="text" class="form-control" id="middle_name" name="middlename" autocomplete="off" placeholder="Middle Name">
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputName">Last Name<sup>*</sup></label>
+				<input type="text" class="form-control" id="last_name" name="last_name" autocomplete="off" placeholder="Last Name">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class='form-group col-md-4'>
+				<label for="inputGender">Gender</label>
+				<select class="form-control" autocomplete="off" id="sex">
+					<option selected disabled>Select Gender</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Others">Others</option><br>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputdob">Birth Date<sup>*</sup></label>
+				<input type="text" maxlength="10" class="form-control" placeholder="dd/mm/yyyy" id="birth_date" name="birth_date" autocomplete="off">
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputPhone">Phone Number<sup>*</sup></label>
+				<input type="text" maxlength="10" autocomplete="off" class="form-control" id="phone_number" name="phone_number" placeholder="Mobile Number">   
+				<span class="errorMessage" id="phone_Exists_Error"></span>
+			</div>       
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="country">Country<sup>*</sup></label>
+				<select class="form-control" id="country">
+					<option value="">Select country</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="state">State<sup>*</sup></label>
+				<select id="state" class="form-control">
+					<option selected>Select state</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="city">City<sup>*</sup></label>
+				<select class="form-control" id="city">
+					<option value="">Select city</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="inputEmail4">Email<sup>*</sup></label>
+				<input type="email" name="email" class="form-control" id="user_email" autocomplete="off" placeholder="Email">
+			</div>
+			<div class="form-group col-md-6">
+			<label for="inputAddress">Address<sup>*</sup></label>
+			<input type="text" class="form-control" id="user_addr" name="user_addr" autocomplete="off" placeholder="Address">
+			</div>
+		</div>
+		<div class="form-group col-md-12">
+			<label for="inputAbout">About Yourself<sup>*</sup></label>
+			<textarea id="about_user" name="about_user" class="form-control" rows="5" cols="20" autocomplete="off" placeholder="Write about yourself here..."></textarea>
+        </div>
+        <div class="form-group col-md-12">          
+            <input button="submit" id="submit_btn" value="Register" class="btn btn-primary btn-lg btn-block btn-huge">
+            <input type="button" value="Update" id="b_Update" class="btn btn-success btn-lg btn-block btn-huge">
+            <input type="reset" id="reset_btn" value="Reset" class="btn btn-secondary btn-lg btn-block btn-huge">
+        </div>  
+    </form>
+    <table id="table_user" class="table table-hover">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+		    <th>Gender</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>E-Mail</th>
+            <th>Address</th>
+            <th>About</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody id="user_data">
+        </tbody>
+      </table>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="validation.js"></script>
+    <script language="javascript" type="text/javascript" src="dataload.js"></script>
+  </body>
+</html>
